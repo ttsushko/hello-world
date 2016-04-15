@@ -1,0 +1,28 @@
+.hero {
+	border: 1px solid #cc6134;
+	border-radius: 3px;
+	box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+	padding: 5px 5px 5px 5px;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: #cc6134;
+	font-family: Tahoma;
+	color: #ffffff;
+
+	.hero-primary-info {
+		.hero-logo {
+			padding-right: 5px;
+			display: block;
+			float: left;
+
+			img {
+				width: 60px;
+				height: 60px;
+			}
+		}
+		.hero-description {
+			padding-left: 10px;
+		}
+	}
+}

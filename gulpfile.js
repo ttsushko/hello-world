@@ -22,4 +22,11 @@ gulp.task('styles', function () {
         .pipe(gulp.dest(config.paths.distCss))
 });
 
-gulp.task('dev', ['clean', 'html', 'styles']);
+gulp.task('watch', function () {
+
+    //gulp.watch(config.paths.js, ['scripts']);
+    gulp.watch('src/scss/**/*.scss', ['styles']);
+    gulp.watch('./src/*.html', ['html']);
+});
+
+gulp.task('dev', ['clean', 'html', 'styles', 'watch']);
